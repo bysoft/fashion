@@ -1,0 +1,248 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    title Merovingio - Responsive Bootstrap Template
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='stylesheet', href='stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='stylesheets/font-awesome.css')
+    link(rel='stylesheet', href='stylesheets/theme.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Patua+One')
+    //if lt IE 9
+      link(rel='stylesheet', href='css/font-awesome-ie7.css')
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    link(rel='shortcut icon', href='favicon.ico')
+  body
+    // page wrapper
+    .container.wrapper
+      header
+        .row
+          .span4
+            h1
+              a(href='index.html')
+                img(src='assets/logo.jpg', alt='')
+          .span4
+            ul.social-media
+              li
+                a(href='#')
+                  i.icon.icon-twitter-sign
+              li
+                a(href='#')
+                  i.icon.icon-facebook-sign
+              li
+                a(href='#')
+                  i.icon.icon-google-plus-sign
+              li
+                a(href='#')
+                  i.icon.icon-pinterest-sign
+          .span4
+            form
+              .input-append
+                input#appendedInputButtons.span2(type='text')
+                button.btn.btn-primary(type='button') Search
+          // /.span
+        // /.row
+      .row
+        .span12
+          .navbar
+            .navbar-inner
+              .container
+                a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse') Menu
+                a.brand(href='index.html') Merovingio
+                .nav-collapse.collapse
+                  ul.nav
+                    li.active
+                      a(href='index.html') Home
+                    li
+                      a(href='about.html') About
+                    li
+                      a(href='portfolio.html') Portfolio
+                    li
+                      a(href='pricing.html') Pricing
+                    li
+                      a(href='blog.html') Blog
+                    li
+                      a(href='contact.html') Contact
+                    li.dropdown
+                      a.dropdown-toggle(data-toggle='dropdown', href='#')
+                        | More
+                        b.caret
+                      ul.dropdown-menu(role='menu', aria-labelledby='dLabel')
+                        li
+                          a(href='#') New Products and Catalogs
+                          a(href='#') Latests Offers and More
+                          a(href='#') All Products Discount
+                  // /.nav
+                // /.nav-collapse
+              // /container
+            // /navbar-inner
+          // /navbar
+        // /row
+      // /span12 whoa!
+      .row
+        .span12
+          #home-carousel.carousel.slide
+            // Carousel items
+            .carousel-inner
+              .active.item
+                img(src='assets/slide-4.jpg', alt='')
+              .item
+                img(src='assets/slide-5.jpg', alt='')
+            // Carousel nav
+            a.carousel-control.left(href='#home-carousel', data-slide='prev') ‹
+            a.carousel-control.right(href='#home-carousel', data-slide='next') ›
+          // /.carousel
+        // /.span
+      // /.row
+      .row
+        .span12
+          .well.centered
+            h3
+              | Welcome to Merovingio a chrystal clear multipurpose theme
+              a.btn.btn-primary.btn-large(href='#')
+                | Learn More
+                i.icon.icon-caret-right
+      .row
+        .span3
+          .info-column
+            img.img-rounded(src='assets/team-1.jpg', alt='')
+            h3
+              i.icon.icon-beaker
+              | Custom Design
+            p
+              | When considering redesigning your
+              a(href='#') company website
+              | , one of the best things you can do to prepare is to research what you want. That's all you need to know.
+            a.btn.btn-primary(href='#') Learn More »
+        .span3
+          .info-column
+            img.img-rounded(src='assets/team-2.jpg', alt='')
+            h3
+              i.icon.icon-cloud
+              | Cloud Perfect
+            p
+              | Get a handle on your finances the free and fast way. Mint does all the work of organizing and categorizing your spending for you. See where every dime goes and make money.
+            a.btn.btn-primary(href='#') Learn More »
+        .span3
+          .info-column
+            img.img-rounded(src='assets/team-3.jpg', alt='')
+            h3
+              i.icon.icon-inbox
+              | Customizable
+            p
+              | Just click on what you want to accomplish with your money. Mint gives you the simple steps for getting there, along with free advice, gentle reminders, and encouragement.
+            a.btn.btn-primary(href='#') Learn More »
+        .span3
+          .info-column
+            img.img-rounded(src='assets/team-4.jpg', alt='')
+            h3
+              i.icon.icon-refresh
+              | Responsive
+            p
+              | It’s easier to stick to a budget designed for your lifestyle. Mint automatically creates one tailored just for you and keeps you on track with email and mobile alerts.
+            a.btn.btn-primary(href='#') Learn More »
+      // /.row
+      .row
+        .span12
+          .well.centered
+            h3 It brings you a beautiful look and a powerful framework for your website
+            p
+              | Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds. Explore. Dream. Discover. The design will scale to fit on all browser widths/resolutions and on all mobile devices. Go ahead and scale your browser window and see the results.
+    // /.container (page container)
+    footer
+      .container
+        // row of widgets
+        .row
+          .span3
+            h4 About Us
+            p
+              | Technology should be about more than newest, loudest, prettiest. It should make a difference..
+              a(href='#') Aenean
+              | nisl orci, condimentum.
+            p
+              | We take what’s familiar and look at it in a new light. Our team focuses on making technology that’s simple, fresh and helpful.
+          // /.span3
+          hr.visible-phone
+          .span3
+            h4 Featured Categories
+            ul
+              li
+                a(href='#') Payment Gateway Processors
+                small Hot Topic
+              li
+                a(href='#') User Experience
+              li
+                a(href='#') Front-End Develpment
+              li
+                a(href='#') CSS Pre-Processors
+                small Hot Topic
+              li
+                a(href='#') Web Platfoms
+              li
+                a(href='#') HTML5 The Ubiquitous Platform
+                small Hot Topic
+          // /.span3
+          hr.visible-phone
+          .span3
+            h4 Popular Tags Monthly
+            ul.tag-cloud
+              li
+                a(href='#') styles
+              li
+                a(href='#') layout
+              li
+                a(href='#') letterpress
+              li
+                a(href='#') magazine
+              li
+                a(href='#') menu
+              li
+                a(href='#') metal
+              li
+                a(href='#') navigation
+              li
+                a(href='#') paper
+              li
+                a(href='#') print
+              li
+                a(href='#') scripts
+              li
+                a(href='#') nodes
+          // /.span3
+          hr.visible-phone
+          .span3
+            h4 Subscribe to our Newsletter
+            form.footer-form
+              fieldset
+                label Get our email weekly newsletter
+                input(type='text', placeholder='Enter your email')
+                span.help-block No spam, we promise!
+                button.btn.btn-primary(type='submit') Subscribe
+          // /.span3
+        // /.row
+      // /.container
+      .bottom-line
+        .container
+          p.pull-right
+            a(href='#') Back to top
+          p
+            | © 2013 coded by brian
+            a(href='http://twitter.com/heyallanmoreno', target='_blank') @heyallanmoreno
+            | |
+            a(href='#')
+              i.icon.icon-twitter
+            | |
+            a(href='#')
+              i.icon.icon-facebook
+            | |
+            a(href='#')
+              i.icon.icon-google-plus
+            | |
+            a(href='')
+              i.icon.icon-pinterest
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\\/script>')
+    script(src='javascripts/bootstrap.min.js')

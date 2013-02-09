@@ -1,0 +1,765 @@
+!!! 5
+html(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title Parallax606
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(href='http://fonts.googleapis.com/css?family=Kelly+Slab', rel='stylesheet', type='text/css')
+    link(href='css/reset.css', rel='stylesheet')
+    link(href='css/parallax_style_1.1.3.css', rel='stylesheet')
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/about_slider/lean-slider.css', rel='stylesheet')
+    link(rel='stylesheet', href='css/camera.css')
+    link(rel='stylesheet', href='css/blur.css')
+    // blur slidShow
+    // HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    // Fav and touch icons
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='icon/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='icon/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='icon/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='icon/apple-touch-icon-57-precomposed.png')
+    link(rel='shortcut icon', href='icon/favicon.ico')
+  body.clearfix(data-spy='scroll', data-target='#navbar', data-offset='10')
+    #navbar.navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='#')
+            | Parallax
+            span 606
+          .nav-collapse.collapse.pull-right
+            ul.nav
+              li.active
+                a(href='#welcome') Home
+              li
+                a(href='#About') About
+              li
+                a(href='#Services') Services
+              li
+                a(href='#Portfolio') Portfolio
+              li
+                a(href='#LargeSlider') Gallery
+              li
+                a(href='#Contact') Contact
+          // /.nav-collapse
+    .container-fluid.clearfix
+      .row-fluid
+        #welcome
+          .container-fluid.clearfix(style='padding: 0; overflow: hidden;')
+            ul.cb-slideshow
+              li
+                span Image 01
+                div
+                  h3 One morning, when Gregor Samsa woke from troubled 
+              li
+                span Image 02
+                div
+                  h3 dreams, he found himself transformed in his bed into a 
+              li
+                span Image 03
+                div
+                  h3 horrible vermin. He lay on his armour-like back, and if he
+              li
+                span Image 04
+                div
+                  h3 lifted his head a little he could see his brown belly, slightly
+              li
+                span Image 05
+                div
+                  h3 domed and divided by arches into stiff sections.
+              li
+                span Image 06
+                div
+                  h3 The bedding was hardly.
+        #About
+          .container-fluid.clearfix.About
+            .container.clearfix
+              .container.clearfix.TitleSection
+                h1
+                  | About
+                  span Parallax606
+                h1
+                  span AND
+                  | WHAT
+                  span MAKES
+                  | IT
+                  span UNIQUE
+              .container.clearfix
+                .span12
+                  .span4
+                    .Team.clearfix
+                      .round-thumb-container
+                        .round-thumb
+                          span
+                            img(src='images/circlegallery/1.jpg')
+                      h2 John Doe
+                      h3 Creative Director
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                        | sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                        | vel ultrices facilisis, nisi mauris sollicitudin mauris.
+                      ul.Social
+                        li
+                          a.Facebook(href='#', rel='tooltip', title='Facebook') Facebook
+                        li
+                          a.Twitter(href='#', rel='tooltip', title='Twitter') Twitter
+                        li
+                          a.Dribbble(href='#', rel='tooltip', title='Dribbble') Dribbble
+                        li
+                          a.Behance(href='#', rel='tooltip', title='Behance') Behance
+                  .span4
+                    .Team.clearfix
+                      .round-thumb-container
+                        .round-thumb
+                          span
+                            img(src='images/circlegallery/2.jpg')
+                      h2 John Doe
+                      h3 Art-Director
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                        | sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                        | vel ultrices facilisis, nisi mauris sollicitudin mauris.
+                      ul.Social
+                        li
+                          a.Pinterest(href='#', rel='tooltip', title='Pinterest') Pinterest
+                        li
+                          a.Googleplus(href='#', rel='tooltip', title='Googleplus') Googleplus
+                        li
+                          a.Forrst(href='#', rel='tooltip', title='Forrst') Forrst
+                        li
+                          a.Instagram(href='#', rel='tooltip', title='Instagram') Instagram
+                  .span4
+                    .Team.clearfix
+                      .round-thumb-container
+                        .round-thumb
+                          span
+                            img(src='images/circlegallery/3.jpg')
+                      h2 John Doe
+                      h3 Chief Executive Officer
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                        | sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                        | vel ultrices facilisis, nisi mauris sollicitudin mauris.
+                      ul.Social
+                        li
+                          a.Instagram(href='#', rel='tooltip', title='Instagram') Instagram
+                        li
+                          a.Deviantart(href='#', rel='tooltip', title='Deviantart') Deviantart
+                        li
+                          a.Soundcloud(href='#', rel='tooltip', title='Soundcloud') Soundcloud
+                        li
+                          a.Wordpress(href='#', rel='tooltip', title='Wordpress') Wordpress
+        // #About
+        #intro.Parallax
+          .ParallaxText
+            h2
+              | WORD
+              span OF
+              | THE
+              span WISE
+            .clearfix
+            blockquote
+              | A man must be big enough to admit his mistakes, smart enough to profit
+              | from them, and strong enough to correct them.
+            .clearfix
+            p - Jason Adams -
+        // #intro
+        #Services
+          .container-fluid.clearfix.Services
+            .container.clearfix.TitleSection
+              h1
+                | Our
+                span Services
+              h1
+                span Lorem
+                | ipsum
+                span dolor
+                | sit
+                span amet
+            .container.clearfix
+              .row-fluid
+                .span12
+                  .slider-wrapper
+                    #slider
+                      .slide1
+                        img(src='images/1.jpg', alt='')
+                      .slide2
+                        img(src='images/2.jpg', alt='')
+                      .slide3
+                        img(src='images/3.jpg', alt='')
+                      .slide4
+                        img(src='images/4.jpg', alt='')
+                    #slider-direction-nav
+                    #slider-control-nav
+              .container.clearfix.TitleSection
+                h1
+                  span We
+                  | make
+                  span our
+                  | clients
+                  span happy!
+              .row-fluid
+                .span6
+                  .ca-menu
+                    div
+                      a(href='#')
+                        span.ca-icon A
+                        .ca-content
+                          h2.ca-main Web Design
+                          h3.ca-sub Personalized to your needs
+                .span6
+                  .ca-menu
+                    div
+                      a(href='#')
+                        span.ca-icon I
+                        .ca-content
+                          h2.ca-main Web Development
+                          h3.ca-sub Advanced use of technology
+              .row-fluid
+                .span6
+                  .ca-menu
+                    div
+                      a(href='#')
+                        span.ca-icon C
+                        .ca-content
+                          h2.ca-main Wordpress
+                          h3.ca-sub Understanding visually
+                .span6
+                  .ca-menu
+                    div
+                      a(href='#')
+                        span.ca-icon S
+                        .ca-content
+                          h2.ca-main Sophisticated Team
+                          h3.ca-sub Professionals in action
+              .row-fluid
+                .span6
+                  .ca-menu
+                    div
+                      a(href='#')
+                        span.ca-icon d
+                        .ca-content
+                          h2.ca-main Brand Creation
+                          h3.ca-sub 24/7 for you needs
+                .span6
+                  .ca-menu
+                    div
+                      a(href='#')
+                        span.ca-icon O
+                        .ca-content
+                          h2.ca-main Corporate Identity
+                          h3.ca-sub Lorem ipsum dolor
+              .row-fluid
+                h2 Pricing Tables 
+              .row-fluid
+                .span4
+                  .well.PricingTables.Standard
+                    h2 Standard
+                    h3 $15.99 / month
+                    p
+                      span.label POPULAR
+                    ul
+                      li
+                        i.icon-ok-sign
+                        | 10 users
+                      li
+                        i.icon-ok-sign
+                        | 5TB of space
+                      li
+                        i.icon-ok-sign
+                        | About Us
+                      li
+                        i.icon-ok-sign
+                        | News Archive
+                      li
+                        i.icon-ok-sign
+                        | Our Service
+                      li
+                        i.icon-ok-sign
+                        | Our Team
+                      li
+                        i.icon-ok-sign
+                        | Clients Testimonials
+                      li
+                        i.icon-ok-sign
+                        | Job Opportunities
+                      li
+                        i.icon-ok-sign
+                        | F.A.Q
+                    p.Special Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    p
+                      a.btn.btn-large(href='#')
+                        i.icon-ok.icon-white
+                        | Select plan
+                .span4
+                  .well.PricingTables.Professional
+                    h2 Professional
+                    h3 $10.99 / month
+                    p
+                      span.label.label-success POPULAR
+                    ul
+                      li
+                        i.icon-ok-sign
+                        | 10 users
+                      li
+                        i.icon-ok-sign
+                        | 5TB of space
+                      li
+                        i.icon-ok-sign
+                        | About Us
+                      li
+                        i.icon-ok-sign
+                        | News Archive
+                      li
+                        i.icon-ok-sign
+                        | Our Service
+                      li
+                        i.icon-ok-sign
+                        | Our Team
+                      li
+                        i.icon-ok-sign
+                        | Clients Testimonials
+                      li
+                        i.icon-ok-sign
+                        | Job Opportunities
+                      li
+                        i.icon-ok-sign
+                        | F.A.Q
+                    p.Special Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    p
+                      a.btn.btn-success.btn-large(href='#')
+                        i.icon-ok.icon-white
+                        | Select plan
+                .span4
+                  .well.PricingTables.Premium
+                    h2 Premium
+                    h3 $8.99 / month
+                    p
+                      span.label.label-info BUDGET
+                    ul
+                      li
+                        i.icon-ok-sign
+                        | 10 users
+                      li
+                        i.icon-ok-sign
+                        | 5TB of space
+                      li
+                        i.icon-ok-sign
+                        | About Us
+                      li
+                        i.icon-ok-sign
+                        | News Archive
+                      li
+                        i.icon-ok-sign
+                        | Our Service
+                      li
+                        i.icon-ok-sign
+                        | Our Team
+                      li
+                        i.icon-ok-sign
+                        | Clients Testimonials
+                      li
+                        i.icon-ok-sign
+                        | Job Opportunities
+                      li
+                        i.icon-ok-sign
+                        | F.A.Q
+                    p.Special Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    p
+                      a.btn.btn-large(href='#')
+                        i.icon-ok.icon-white
+                        | Select plan
+        // #Services
+        #second.Parallax
+          .ParallaxText
+            h2
+              | WORD
+              span OF
+              | THE
+              span WISE
+            .clearfix
+            blockquote
+              | A man must be big enough to admit his mistakes, smart enough to profit
+              | from them, and strong enough to correct them.
+            .clearfix
+            p - Jason Adams -
+        // #second
+        #Portfolio
+          .container-fluid.clearfix.Portfolio
+            .container.clearfix.TitleSection
+              h1
+                | Our
+                span Portfolio
+              h1
+                span Lorem
+                | ipsum
+                span dolor
+                | sit
+                span amet
+            .container.clearfix
+              .span12
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                  | sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                  | vel ultrices facilisis, nisi mauris sollicitudin mauris.
+              .row-fluid
+                .span12
+                  nav#filter
+                  section#container
+                    ul#stage
+                      li(data-tags='Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/1.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Video,Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/2.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Web Design,Video')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/3.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Web Design,Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/4.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Video')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/5.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Web Design,Video,Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/6.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Video,Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/7.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Web Design')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/8.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Web Design,Video')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/9.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Web Design')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/10.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Video,Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/11.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Video,Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/12.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Photographies')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/13.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Web Design,Video')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/14.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+                      li(data-tags='Audio')
+                        .filter-thumb-container
+                          .filter-thumb
+                            span
+                              img(src='images/portfolio/18.jpg', alt='Portfolio Filter')
+                        div
+                          h4 Lorem ipsum dolor 
+                          p Lorem ipsum
+        // #Portfolio
+        #third.Parallax
+          .ParallaxText
+            h2
+              | WORD
+              span OF
+              | THE
+              span WISE
+            .clearfix
+            blockquote
+              | A man must be big enough to admit his mistakes, smart enough to profit
+              | from them, and strong enough to correct them.
+            .clearfix
+            p - Jason Adams -
+        // #third
+        #LargeSlider
+          .container-fluid.clearfix.LargeSlider
+            #camera_wrap_3.camera_wrap.camera_emboss
+              div(data-src='images/camera/slides/1.jpg')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+              div(data-src='images/camera/slides/3.jpg', data-time='1500', data-trasperiod='4000', data-link='#', data-target='_blank')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+              div(data-src='images/camera/slides/poster.jpg')
+                iframe(width='100%', height='100%', src='http://www.youtube.com/embed/EokWzMUJcCU?feature=player_detailpage', frameborder='0', allowfullscreen='allowfullscreen')
+              div(data-src='images/camera/slides/4.jpg', data-time='1500', data-trasperiod='4000', data-link='#', data-target='_blank')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+              div(data-src='images/camera/slides/5.jpg', data-time='1500', data-trasperiod='4000', data-link='#', data-target='_blank')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+              div(data-src='images/camera/slides/6.jpg', data-time='1500', data-trasperiod='4000', data-link='#', data-target='_blank')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+              div(data-src='images/camera/slides/7.jpg', data-time='1500', data-trasperiod='4000', data-link='#', data-target='_blank')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+              div(data-src='images/camera/slides/8.jpg', data-time='1500', data-trasperiod='4000', data-link='#', data-target='_blank')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+              div(data-src='images/camera/slides/9.jpg', data-time='1500', data-trasperiod='4000', data-link='#', data-target='_blank')
+                .fadeIn.camera_effected.Caption
+                  | " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh
+                  | erat, sagittis sit amet congue at, aliquam eu libero "
+            // #camera_wrap_3
+        // #LargeSlider
+        #fourth.Parallax
+          .ParallaxText
+            h2
+              | WORD
+              span OF
+              | THE
+              span WISE
+            .clearfix
+            blockquote
+              | A man must be big enough to admit his mistakes, smart enough to profit
+              | from them, and strong enough to correct them.
+            .clearfix
+            p - Jason Adams -
+        // #fourth
+        #Contact
+          .container-fluid.clearfix.Contact
+            .container.clearfix.TitleSection
+              h1
+                | CONTACT
+                span US
+              h1
+                span LET'S
+                | HAVE
+                span A
+                | DISCUSSION
+            .container.clearfix
+              .container
+                .span8(style='margin-top: 20px;')
+                  iframe(width='100%', height='374', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com.eg/maps?f=q&source=s_q&hl=ar&geocode=&q=%D8%B1%D8%B4%D8%AF%D9%8A,+%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9&aq=1&oq=%D8%B1%D8%B4%D8%AF%D9%89+%D8%A7%D9%84%D8%A7%D8%B3%D9%83&sll=26.9061,30.876198&sspn=8.889374,21.643066&ie=UTF8&hq=&hnear=%D8%B1%D8%B4%D8%AF%D9%8A&t=m&ll=31.239591,29.949589&spn=0.036693,0.171661&z=14&iwloc=A&output=embed')
+                  br
+                .span4
+                  h2 Contact Info
+                  .well
+                    p
+                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                      | ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                      | dis parturient montes.
+                    hr
+                    .contact-info
+                      ul
+                        li
+                          i.icon-globe(style='margin-right: 10px;')
+                          | Lorem ipsum dolor
+                        br
+                        li
+                          i.icon-bullhorn(style='margin-right: 10px;')
+                          | +(20) (0) 491.27.29
+                        br
+                        li
+                          i.icon-envelope(style='margin-right: 10px;')
+                          a(href='mailto:ahmedeabbas@yahoo.com') Some@yahoo.com
+                        br
+                        li
+                          i.icon-map-marker(style='margin-right: 10px;')
+                          | Lorem ipsum dolor
+                          | consectetuer adipiscing elit.
+              .container
+                .span12
+                  h2 Get In Touch With Us
+                  .well
+                    p
+                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                      | ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                      | dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+                      | nec, pellentesque eu, pretium quis, sem.
+                    form#registerHere.form-horizontal(method='post', action='')
+                      fieldset
+                        .control-group
+                          label.control-label(for='input01') Name
+                          .controls
+                            input#user_name.input-xlarge(type='text', name='user_name')
+                        .control-group
+                          label.control-label(for='input01') Email
+                          .controls
+                            input#user_email.input-xlarge(type='text', name='user_email')
+                        .control-group
+                          label.control-label(for='input01') Subject
+                          .controls
+                            input#pwd.input-xlarge(type='text', name='pwd')
+                        .control-group
+                          label.control-label(for='input01') Your Message
+                          .controls
+                            textarea#cpwd.input-xlarge(cols='', rows='', name='cpwd')
+                        .control-group
+                          label.control-label(for='input01')
+                          .controls
+                            button.btn(type='submit', rel='tooltip', title='Send Message') Send Message
+        // #Contact
+        #fifth.Parallax
+          .ParallaxText
+            h2
+              | WORD
+              span OF
+              | THE
+              span WISE
+            .clearfix
+            blockquote
+              | A man must be big enough to admit his mistakes, smart enough to profit
+              | from them, and strong enough to correct them.
+            .clearfix
+            p - Jason Adams -
+        // #fifth
+        .container-fluid.Footer
+          .container
+            footer
+              ul.Social
+                li
+                  a.Rss(rel='tooltip', href='#', data-placement='top', data-original-title='RSS') Rss
+                li
+                  a.Facebook(rel='tooltip', href='#', data-original-title='Facebook') Facebook
+                li
+                  a.Twitter(rel='tooltip', href='#', data-original-title='Twitter') Twitter
+                li
+                  a.Dribbble(rel='tooltip', href='#', data-original-title='Dribbble') Dribbble
+                li
+                  a.YouTube(rel='tooltip', href='#', data-original-title='YouTube') YouTube
+                li
+                  a.Pinterest(rel='tooltip', href='#', data-original-title='Pinterest') Pinterest
+                li
+                  a.Behance(rel='tooltip', href='#', data-original-title='Behance') Behance
+                li
+                  a.Googleplus(rel='tooltip', href='#', data-original-title='Googleplus') Googleplus
+                li
+                  a.Forrst(rel='tooltip', href='#', data-original-title='Forrst') Forrst
+                li
+                  a.Instagram(rel='tooltip', href='#', data-original-title='Instagram') Instagram
+                li
+                  a.Deviantart(rel='tooltip', href='#', data-original-title='Deviantart') Deviantart
+                li
+                  a.Soundcloud(rel='tooltip', href='#', data-original-title='Soundcloud') Soundcloud
+                li
+                  a.Wordpress(rel='tooltip', href='#', data-original-title='Wordpress') Wordpress
+                li
+                  a.Picasa(rel='tooltip', href='#', data-original-title='Picasa') Picasa
+              a.brand(href='#welcome')
+                | Parallax
+                span 606
+              p
+                | All rights reserved. Theme by ©
+                a(href='mailto:ahmedeabbas@yahoo.com') Coyier
+      // /Row
+    // /container
+    #toTop To Top
+    // Le javascript==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='js/jquery-1.8.2.min.js')
+    script(src='js/lean-slider.min.js')
+    // About Slider
+    script(src='js/my_script.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery.easing.1.3.min.js')
+    // parallax
+    script(src='js/modernizr-2.6.1.min.js')
+    // blur slidShow
+    script(src='js/jquery.quicksand.min.js')
+    script(src='js/jquery.validate.min.js')
+    script(src='js/jquery.mobile.customized.min.js')
+    // camera Slider
+    script(src='js/camera.min.js')
+    // camera Slider
+    script(src='js/jquery.parallax-1.1.3.min.js')
+    // parallax
+    script(src='js/jquery.localscroll-1.2.7-min.js')
+    // parallax
+    script
+      jQuery(function () {
+      jQuery('#camera_wrap_3').camera({
+      height: '65%',
+      pagination: false,
+      thumbnails: true,
+      imagePath: '../images/'
+      });
+      });

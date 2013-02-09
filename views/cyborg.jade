@@ -1,0 +1,290 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title hearst fashion hack
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Jet black and electric blue.')
+    meta(name='author', content='Thomas Park')
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(href='stylesheets/bootstrap-responsive.min.css', rel='stylesheet')
+    link(href='stylesheets/bootswatch.css', rel='stylesheet')
+    script(type='text/javascript')
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  body.preview(data-spy='scroll', data-target='.subnav', data-offset='80')
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='../') fashion
+          #main-menu.nav-collapse
+            ul#main-menu-left.nav
+              li
+                a(onclick='pageTracker._link(this.href); return false;', href='http://news.bootswatch.com') News
+              li
+                a#swatch-link(href='/#gallery') Gallery
+              li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', href='#')
+                  | Preview
+                  b.caret
+                ul#swatch-menu.dropdown-menu
+                  li
+                    a(href='../default') Default
+                  li.divider
+                  li
+                    a(href='../amelia') Amelia
+              li#preview-menu.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', href='#')
+                  | Download
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(target='_blank', href='bootstrap.min.css') bootstrap.min.css
+                  li
+                    a(target='_blank', href='bootstrap.css') bootstrap.css
+                  li.divider
+                  li
+                    a(target='_blank', href='variables.less') variables.less
+                  li
+                    a(target='_blank', href='bootswatch.less') bootswatch.less
+            ul#main-menu-right.nav.pull-right
+              li
+                a(rel='tooltip', target='_blank', href='http://builtwithbootstrap.com/', title='Showcase of Bootstrap sites & apps', onclick='_gaq.push(["_trackEvent", "click", "outbound", "builtwithbootstrap"]);')
+                  | Built With Bootstrap
+                  i.icon-share-alt
+              li
+                a(rel='tooltip', target='_blank', href='https://wrapbootstrap.com/?ref=bsw', title='Marketplace for premium Bootstrap templates', onclick='_gaq.push(["_trackEvent", "click", "outbound", "wrapbootstrap"]);')
+                  | WrapBootstrap
+                  i.icon-share-alt
+    .container
+      header#overview.jumbotron.subhead
+        .row
+          .span6
+            h1 Hack
+            p.lead fashion mobile app
+          .span6
+        .subnav
+          ul.nav.nav-pills
+            li
+              a(href='#typography') Typography
+            li
+              a(href='#navbar') Navbar
+            li
+              a(href='#buttons') Buttons
+            li
+              a(href='#forms') Forms
+            li
+              a(href='#tables') Tables
+            li
+              a(href='#miscellaneous') Miscellaneous
+      section#typography
+        .page-header
+          h1 Typography
+        // Headings & Paragraph Copy
+        .row
+          .span4
+            .well
+              h1 h1. Heading 1
+            h3 Example body text
+            p
+              | Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+          .span4
+            h3 Example body text
+            p
+              | Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            p
+              | Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
+          .span4
+            h3 Example addresses
+            address
+              strong Twitter, Inc.
+              br
+              | 795 Folsom Ave, Suite 600
+              br
+              | San Francisco, CA 94107
+              br
+              abbr(title='Phone') P:
+              | (123) 456-7890
+            address
+              strong Full Name
+              br
+              a(href='mailto:#') first.last@gmail.com
+        .row
+          .span6
+            blockquote
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              small
+                | Someone famous in
+                cite(title='Source Title') Source Title
+          .span6
+            blockquote.pull-right
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              small
+                | Someone famous in
+                cite(title='Source Title') Source Title
+      section#navbar
+        .page-header
+          h1 Navbars
+        .navbar
+          .navbar-inner
+            .container(style='width: auto;')
+              a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.brand(href='#') Project name
+              .nav-collapse
+                ul.nav
+                  li.active
+                    a(href='#') Home
+                  li
+                    a(href='#') Link
+                  li
+                    a(href='#') Link
+                  li
+                    a(href='#') Link
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Dropdown
+                      b.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Action
+                      li
+                        a(href='#') Another action
+                      li
+                        a(href='#') Something else here
+                      li.divider
+                      li
+                        a(href='#') Separated link
+                form.navbar-search.pull-left(action='')
+                  input.search-query.span2(type='text', placeholder='Search')
+                ul.nav.pull-right
+                  li
+                    a(href='#') Link
+                  li.divider-vertical
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Dropdown
+                      b.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Action
+                      li
+                        a(href='#') Another action
+                      li
+                        a(href='#') Something else here
+                      li.divider
+                      li
+                        a(href='#') Separated link
+              // /.nav-collapse
+          // /navbar-inner
+        // /navbar
+        .navbar.navbar-inverse
+          .navbar-inner
+            .container(style='width: auto;')
+              a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.brand(href='#') Project name
+              .nav-collapse
+                ul.nav
+                  li.active
+                    a(href='#') Home
+                  li
+                    a(href='#') Link
+                  li
+                    a(href='#') Link
+                  li
+                    a(href='#') Link
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Dropdown
+                      b.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Action
+                      li
+                        a(href='#') Another action
+                      li
+                        a(href='#') Something else here
+                      li.divider
+                      li
+                        a(href='#') Separated link
+                form.navbar-search.pull-left(action='')
+                  input.search-query.span2(type='text', placeholder='Search')
+                ul.nav.pull-right
+                  li
+                    a(href='#') Link
+                  li.divider-vertical
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Dropdown
+                      b.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Action
+                      li
+                        a(href='#') Another action
+                      li
+                        a(href='#') Something else here
+                      li.divider
+                      li
+                        a(href='#') Separated link
+        .page-header
+          h1 Buttons
+        br
+        h3#alerts Alerts
+        .row
+          .span12
+            .alert.alert-block
+              a.close ×
+              h4.alert-heading Alert block
+              p
+                | Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        .row
+          .span4
+            .alert.alert-error
+              a.close ×
+              strong Error
+              | Change a few things up and try submitting again.
+          .span4
+            .alert.alert-success
+              a.close ×
+              strong Success
+              | You successfully read this important alert message.
+          .span4
+            .alert.alert-info
+              a.close ×
+              strong Information
+              | This alert needs your attention, but it's not super important.
+      br
+      br
+      br
+      br
+      hr
+      footer#footer
+        p.pull-right
+          a(href='#') Back to top
+        .links
+          a(href='http://news.bootswatch.com', onclick='pageTracker._link(this.href); return false;') Blog
+          a(href='http://feeds.feedburner.com/bootswatch') RSS
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+    script(src='javascripts/bootstrap.min.js')
