@@ -1,9 +1,9 @@
 var Fashion = Fashion || (function($) {
 
-    var Utils   = {}, // Your Toolbox  
+    var Utils   = {}, // Your Toolbox
         Ajax    = {}, // Your Ajax Wrapper
-        Events  = {}, // Event-based Actions      
-        Routes  = {}, // Your Page Specific Logic   
+        Events  = {}, // Event-based Actions
+        Routes  = {}, // Your Page Specific Logic
         App     = {}, // Your Global Logic and Initializer
         Public  = {}; // Your Public Functions
 
@@ -12,11 +12,11 @@ var Fashion = Fashion || (function($) {
             debug: true,
             meta: {},
             init: function() {
-                
+
                 $('meta[name^="app-"]').each(function(){
 	            	Utils.settings.meta[ this.name.replace('app-','') ] = this.content;
 	            });
-                
+
             }
         },
         cache: {
@@ -27,7 +27,7 @@ var Fashion = Fashion || (function($) {
             if(typeof path=="undefined"){
                 path = '';
             }
-            return Utils.settings.meta.homeURL+path+'/';            
+            return Utils.settings.meta.homeURL+path+'/';
         },
         log: function(what) {
             if (Utils.settings.debug) {
@@ -35,14 +35,14 @@ var Fashion = Fashion || (function($) {
             }
         },
         parseRoute: function(input) {
-	        
+
 		    var delimiter = input.delimiter || '/',
 		        paths = input.path.split(delimiter),
 		        check = input.target[paths.shift()],
 		        exists = typeof check != 'undefined',
 		        isLast = paths.length == 0;
 		    input.inits = input.inits || [];
-		    
+
 		    if (exists) {
 		    	if(typeof check.init == 'function'){
 	    			input.inits.push(check.init);
@@ -56,7 +56,7 @@ var Fashion = Fashion || (function($) {
 		            });
 		        } else {
 		            Utils.parseRoute({
-		                path: paths.join(delimiter), 
+		                path: paths.join(delimiter),
 		                target: check,
 		                delimiter: delimiter,
 		                parsed: input.parsed,
@@ -70,7 +70,7 @@ var Fashion = Fashion || (function($) {
 		    }
 		},
 		route: function(){
-            
+
             Utils.parseRoute({
 	            path: Utils.settings.meta.route,
 			    target: Routes,
@@ -86,11 +86,11 @@ var Fashion = Fashion || (function($) {
 			        }
 			    }
 	        });
-            
-        } 
+
+        }
     };
     var _log = Utils.log;
-	
+
     Ajax = {
 	    ajaxUrl: Utils.home_url('ajax'),
 	    send: function(type, method, data, returnFunc){
@@ -113,13 +113,13 @@ var Fashion = Fashion || (function($) {
     Events = {
         endpoints: {},
         bindEvents: function(){
-            
+
             $('[data-event]').each(function(){
         		var _this = this,
         			method = _this.dataset.method || 'click',
         			name = _this.dataset.event,
         			bound = _this.dataset.bound;
-        		
+
         		if(!bound){
 	        		Utils.parseRoute({
 			            path: name,
@@ -128,7 +128,7 @@ var Fashion = Fashion || (function($) {
 					    parsed: function(res) {
 					    	if(res.exists){
 					    		_this.dataset.bound = true;
-					    		$(_this).on(method, function(e){ 
+					    		$(_this).on(method, function(e){
 					        		res.obj.call(_this, e);
 					        	});
 					       }
@@ -136,7 +136,7 @@ var Fashion = Fashion || (function($) {
 			        });
 		        }
         	});
-            
+
         },
         init: function(){
             Events.bindEvents();
@@ -146,17 +146,29 @@ var Fashion = Fashion || (function($) {
     App = {
         logic: {},
         init: function() {
-            
+
             Utils.settings.init();
-            Events.init();   
-            Utils.route();    
-            
+            Events.init();
+            Utils.route();
+
+        }
+      , test: function(){
+            alert('test')
         }
     };
-    
+
     Public = {
-        init: App.init  
+        init: App.init
+
+      , hearst: {
+
+          urls: {
+            category: 'http://hearst.api.mashery.com/Article/search?_pretty=0&shape=brief&start=0&limit=10&sort=publish_date%2Cdesc&total=0&api_key=v6xqmhe5q4pqtwkr6bem549x'
+          }
+
+      }
     };
+
 
     return Public;
 
