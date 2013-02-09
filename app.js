@@ -40,6 +40,8 @@ Module dependencies.
 
   app.get("/merov", routes.sub);
 
+  app.get("/hearst", routes.hearst);
+
   app.get("/ui", routes.ui);
 
   app.get("/users", user.list);

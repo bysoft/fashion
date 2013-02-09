@@ -13,6 +13,12 @@
     });
   };
 
+  exports.hearst = function(req, res) {
+    return res.render("board", {
+      title: "merov"
+    });
+  };
+
   exports.ui = function(req, res) {
     return res.render("interface-elements", {
       title: "hearst"
