@@ -19,6 +19,16 @@
     });
   };
 
+
+  exports.hearstjson = function(req, res) {
+    var data = 'http://hearst.api.mashery.com/Article/search?_pretty=0&shape=brief&start=0&limit=10&sort=publish_date%2Cdesc&total=0&api_key=v6xqmhe5q4pqtwkr6bem549x'
+    , jsonData = JSON.parse(data)
+    return res.json(jsonData)
+  };
+
+
+
+
   exports.ui = function(req, res) {
     return res.render("interface-elements", {
       title: "hearst"

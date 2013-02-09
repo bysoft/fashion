@@ -41,6 +41,7 @@ Module dependencies.
   app.get("/merov", routes.sub);
 
   app.get("/hearst", routes.hearst);
+  app.get('/hearstjson', routes.hearstjson)
 
   app.get("/ui", routes.ui);
 
