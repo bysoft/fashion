@@ -439,7 +439,7 @@ html(lang='en')
           a.image(href='{{url}}', title='{{image_title}}')
             img(src='{{extra_large_new_url}}', alt='')
             .description
-              video(src="", poster='{{thumb_src}}')
+              video(height="100", width="200", src="", poster='{{thumb_src}}', data-url_info='{{url_info}}')
                 {{meta_title}}
             .meta
               span

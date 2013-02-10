@@ -19,6 +19,7 @@ request = require('request');
   exports.hearst = function(req, res) {
     return res.render("board", {
       title: "merov"
+    , session: req.session
     });
   };
 
