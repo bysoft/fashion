@@ -190,3 +190,4 @@ $('body').on 'click', '.nav a', ->
 
 
 
+giltUrl = 'https://api.gilt.com/v1/sales/women/active.json?apikey=c6fe9aceed780deefe31eb7aedcccb58'
