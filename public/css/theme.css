@@ -1,3 +1,5 @@
+#overlay{background:#333;opacity:.8;}
+#my_video_1{position:fixed;top:50%;left:25%;z-index:10}
 .decorative-shadow {
   -webkit-box-shadow: 0px 0px 0px 4px #e6e6e6;
   -moz-box-shadow: 0px 0px 0px 4px #e6e6e6;

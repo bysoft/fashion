@@ -1,0 +1,454 @@
+<p>!!! 5
+html(lang=&#39;en&#39;)
+  head
+    // start: Meta
+    meta(charset=&#39;utf-8&#39;)
+    title fashion
+    // end: Meta
+    // start: Mobile Specific
+    meta(name=&#39;viewport&#39;, content=&#39;width=device-width, initial-scale=1, maximum-scale=1&#39;)
+    // end: Mobile Specific
+    // start: Facebook Open Graph
+    meta(property=&#39;og:title&#39;, content=&#39;&#39;)
+    meta(property=&#39;og:description&#39;, content=&#39;&#39;)
+    meta(property=&#39;og:type&#39;, content=&#39;&#39;)
+    meta(property=&#39;og:url&#39;, content=&#39;&#39;)
+    meta(property=&#39;og:image&#39;, content=&#39;&#39;)
+    // end: Facebook Open Graph
+    // start: CSS
+    link(rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;, href=&#39;<a href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">http://fonts.googleapis.com/css?family=Droid+Sans:400,700</a>&#39;)
+    link(rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;, href=&#39;<a href="http://fonts.googleapis.com/css?family=Droid+Serif">http://fonts.googleapis.com/css?family=Droid+Serif</a>&#39;)
+    link(rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;, href=&#39;<a href="http://fonts.googleapis.com/css?family=Boogaloo">http://fonts.googleapis.com/css?family=Boogaloo</a>&#39;)
+    link(rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;, href=&#39;<a href="http://fonts.googleapis.com/css?family=Economica:700,400italic">http://fonts.googleapis.com/css?family=Economica:700,400italic</a>&#39;)
+    link(href=&#39;css/bootstrap.css&#39;, rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;)
+    link(href=&#39;css/bootstrap-responsive.css&#39;, rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;)
+    link(href=&#39;css/style.css&#39;, rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;)
+    link(href=&#39;css/layerslider.css&#39;, rel=&#39;stylesheet&#39;, type=&#39;text/css&#39;)
+    link(href=&#39;<a href="http://vjs.zencdn.net/c/video-js.css">http://vjs.zencdn.net/c/video-js.css</a>&#39;, rel=&#39;stylesheet&#39;)
+    //if lt IE 9
+      link(href=&#39;css/styleIE.css&#39;, rel=&#39;stylesheet&#39;)
+    //if IE 9
+      link(href=&#39;css/styleIE9.css&#39;, rel=&#39;stylesheet&#39;)
+    // end: CSS
+    // Le HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src=&#39;<a href="http://html5shim.googlecode.com/svn/trunk/html5.js">http://html5shim.googlecode.com/svn/trunk/html5.js</a>&#39;)
+  body
+    // start: Header
+    header
+      // start: Container
+      .container
+        // start: Navigation
+        .navbar.navbar-inverse
+          .navbar-inner
+            a.btn.btn-navbar(data-toggle=&#39;collapse&#39;, data-target=&#39;.nav-collapse&#39;)
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.brand(href=&#39;index.html&#39;) fashion
+            .nav-collapse.collapse
+              ul.nav
+                li.video-nav.active
+                  a(href=&#39;#video&#39;) video
+                li.story-nav
+                  a(href=&#39;#story&#39;) story
+                li.login-nav
+                  a(href=&#39;#login&#39;) login
+                //-li.dropdown
+                  //-a.dropdown-toggle(href=&#39;#&#39;, data-toggle=&#39;dropdown&#39;)
+                    //-| trends
+                    //-b.caret
+                  //-ul.dropdown-menu
+                    //-li
+                      //-a(href=&#39;/&#39;) splurge vs. steal
+                //-li
+                  //-a(href=&#39;/&#39;) fashion week
+                //-li
+                  //-a(href=&#39;/&#39;) spotlight
+        // end: Navigation
+      // end: Container
+    // end: Header
+    // start: Container
+    .container
+      // start: Wrapper
+</p>
+<pre><code>  <span class="comment">#wrapper</span>
+    <span class="regexp">//</span> start: Wall
+    <span class="comment">#wall.row-fluid</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.quotes
+          <span class="regexp">//</span>-.quote
+            <span class="regexp">//</span>-| “That’s <span class="keyword">not</span> what we think design <span class="keyword">is</span>. It’s <span class="keyword">not</span> just what it looks like <span class="keyword">and</span> feels like. Design <span class="keyword">is</span> how it works”
+          <span class="regexp">//</span>-.author
+            <span class="regexp">//</span>-| - Steve Jobs -
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">''</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.description
+            <span class="regexp">//</span>-p
+              <span class="regexp">//</span>-| Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.quotes
+          <span class="regexp">//</span>-.quote
+            <span class="regexp">//</span>-| “In most people’s vocabularies, design means veneer. It’s interior decorating. It’s the fabric <span class="keyword">of</span> the curtains <span class="keyword">of</span> the sofa. But to me, nothing could be further from the meaning <span class="keyword">of</span> design. Design <span class="keyword">is</span> the fundamental soul <span class="keyword">of</span> a human-made creation that ends up expressing itself <span class="keyword">in</span> successive outer layers <span class="keyword">of</span> the product <span class="keyword">or</span> service.”
+          <span class="regexp">//</span>-.author
+            <span class="regexp">//</span>-| - Steve Jobs -
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo1.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.description
+            <span class="regexp">//</span>-p
+              <span class="regexp">//</span>-| Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo9.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo2.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo3.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.description
+            <span class="regexp">//</span>-p
+              <span class="regexp">//</span>-| Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo4.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.flex-video
+          <span class="regexp">//</span>-iframe(src=<span class="string">'http://player.vimeo.com/video/3538565?portrait=0&amp;color=ffffff'</span>, width=<span class="string">'480'</span>, height=<span class="string">'256'</span>, frameborder=<span class="string">'0'</span>, webkitallowfullscreen=<span class="string">'webkitAllowFullScreen'</span>, mozallowfullscreen=<span class="string">'mozallowfullscreen'</span>, allowfullscreen=<span class="string">'allowFullScreen'</span>)
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo6.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.description
+            <span class="regexp">//</span>-p
+              <span class="regexp">//</span>-| Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor <span class="keyword">in</span> hendrerit <span class="keyword">in</span> vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo7.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo8.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.description
+            <span class="regexp">//</span>-p
+              <span class="regexp">//</span>-| Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor <span class="keyword">in</span> hendrerit <span class="keyword">in</span> vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item.scenery
+        <span class="regexp">//</span>-.quotes
+          <span class="regexp">//</span>-.quote
+            <span class="regexp">//</span>-| “Innovation distinguishes between a leader <span class="keyword">and</span> a follower.”
+          <span class="regexp">//</span>-.author
+            <span class="regexp">//</span>-| - Steve Jobs -
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.quotes
+          <span class="regexp">//</span>-.quote
+            <span class="regexp">//</span>-| “Visual design <span class="keyword">is</span> often the polar opposite <span class="keyword">of</span> engineering: trading hard edges <span class="keyword">for</span> subjective decisions based <span class="literal">on</span> gut feelings <span class="keyword">and</span> personal experiences. It’s messy, unpredictable, <span class="keyword">and</span> notoriously hard to measure. The apparently erratic behavior <span class="keyword">of</span> artists drives engineers bananas. Their decisions seem arbitrary <span class="keyword">and</span> risk everything <span class="reserved">with</span> <span class="literal">no</span> guaranteed benefit.”
+          <span class="regexp">//</span>-.author
+            <span class="regexp">//</span>-| - Scott Stevenson -
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo10.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.description
+            <span class="regexp">//</span>-p
+              <span class="regexp">//</span>-| Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor <span class="keyword">in</span> hendrerit <span class="keyword">in</span> vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo11.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.description
+            <span class="regexp">//</span>-p
+              <span class="regexp">//</span>-| Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor <span class="keyword">in</span> hendrerit <span class="keyword">in</span> vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+      <span class="regexp">//</span>-.span3.item
+        <span class="regexp">//</span>-.picture
+          <span class="regexp">//</span>-a.image(href=<span class="string">'project.html'</span>, title=<span class="string">'Title'</span>)
+            <span class="regexp">//</span>-img(src=<span class="string">'img/photo12.jpg'</span>, alt=<span class="string">''</span>)
+          <span class="regexp">//</span>-.meta
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-calendar
+              <span class="regexp">//</span>-| <span class="number">1</span> June <span class="number">2011</span>
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-user
+              <span class="regexp">//</span>-a(href=<span class="string">'#'</span>) lucas
+            <span class="regexp">//</span>-span
+              <span class="regexp">//</span>-i.fa-icon-heart-empty
+              <span class="regexp">//</span>-| <span class="number">88</span>
+    <span class="regexp">//</span> end: Wall
+  <span class="regexp">//</span> end: Container
+<span class="regexp">//</span> end: Wrapper
+<span class="regexp">//</span> start: Footer
+
+<span class="comment">#footer</span>
+  <span class="regexp">//</span> start: Container
+  .container
+    <span class="regexp">//</span> start: Row
+    .row-fluid
+      <span class="regexp">//</span> start: About
+      .span3
+        h3 BY Software
+        p
+          i.fa-icon-map-marker
+          | <span class="number">132</span> E <span class="number">45</span>th St
+        p
+          i.fa-icon-map-marker
+          | New York, NY <span class="number">10017</span>, USA
+        p
+          i.fa-icon-phone
+          | Phone: (<span class="number">646</span>) <span class="number">820</span>-<span class="number">1622</span>
+        p
+          i.fa-icon-envelope
+          | Email: none
+        p
+          i.fa-icon-globe
+          | Web: fashion.jit.su
+      <span class="regexp">//</span> end: About
+      <span class="regexp">//</span> start: Latest Tweets
+      .span3
+        <span class="regexp">//</span>-h3 Latest Tweets
+        <span class="regexp">//</span>-ul<span class="comment">#twitter</span>
+        .clear
+      <span class="regexp">//</span> end: Latest Tweets
+      <span class="regexp">//</span> start: Photo Stream
+      .span3
+        <span class="regexp">//</span>-h3 Flickr Photo Stream
+        <span class="regexp">//</span>-.flickr-widget
+          <span class="regexp">//</span>-script(type=<span class="string">'text/javascript'</span>, src=<span class="string">'http://www.flickr.com/badge_code_v2.gne?count=12&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=29609591@N08'</span>)
+          <span class="regexp">//</span>-.clear
+      <span class="regexp">//</span> end: Photo Stream
+      <span class="regexp">//</span> start: Follow Us
+      .span3
+        <span class="regexp">//</span>-h3 Follow Us
+        <span class="regexp">//</span>-a.social-dribbble(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-twitter(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-flickr(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-facebook(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-linkedin(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-vimeo(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-youtube(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-delicious(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-rss(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-picassa(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-deviantart(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-technorati(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-stumbleupon(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-appstore(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-paypal(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-myspace(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-pinterest(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-soundcloud(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-behance(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-instagram(href=<span class="string">'#'</span>)
+        <span class="regexp">//</span>-a.social-googleplus(href=<span class="string">'#'</span>)
+      <span class="regexp">//</span> end: Follow Us
+    <span class="regexp">//</span> end: Row
+  <span class="regexp">//</span> end: Container
+<span class="regexp">//</span> end: Footer
+<span class="regexp">//</span> start: Under Footer
+<span class="comment">#under-footer</span>
+  <span class="regexp">//</span> start: Container
+  .container
+    <span class="regexp">//</span> start: Row
+    .row-fluid
+      <span class="regexp">//</span> start: Under Footer Logo
+      .span2
+        <span class="comment">#under-footer-logo</span>
+          a.brand(href=<span class="string">'#'</span>) fashion
+      <span class="regexp">//</span> end: Under Footer Logo
+      <span class="regexp">//</span> start: Under Footer Copyright
+      .span9
+        <span class="comment">#under-footer-copyright</span>
+          | © <span class="number">2013</span>,
+          a(href=<span class="string">'http://brianyang.com'</span>) BrianYang
+      <span class="regexp">//</span> end: Under Footer Copyright
+      <span class="regexp">//</span> start: Under Footer Back To Top
+      .span1
+        <span class="comment">#under-footer-back-to-top</span>
+          a(href=<span class="string">'#'</span>)
+      <span class="regexp">//</span> end: Under Footer Back To Top
+    <span class="regexp">//</span> end: Row
+  <span class="regexp">//</span> end: Container
+<span class="regexp">//</span> end: Under Footer
+<span class="regexp">//</span> start: Java Script
+<span class="regexp">//</span> Placed at the end <span class="keyword">of</span> the document so the pages load faster
+script(src=<span class="string">'http://vjs.zencdn.net/c/video.js'</span>)
+
+script(src=<span class="string">'js/jquery-1.8.2.js'</span>)
+<span class="regexp">//</span>-script(src=<span class="string">'js/isotope.js'</span>)
+script(src=<span class="string">'js/jquery.imagesloaded.js'</span>)
+script(src=<span class="string">'js/bootstrap.js'</span>)
+script(src=<span class="string">'js/flexslider.js'</span>)
+script(src=<span class="string">'js/carousel.js'</span>)
+script(src=<span class="string">'js/jquery.cslider.js'</span>)
+script(src=<span class="string">'js/slider.js'</span>)
+script(src=<span class="string">'js/fancybox.js'</span>)
+script(src=<span class="string">'js/twitter.js'</span>)
+script(src=<span class="string">'js/jquery.placeholder.min.js'</span>)
+script(src=<span class="string">'js/jquery-easing-1.3.js'</span>)
+script(src=<span class="string">'js/jquery.layerslider.js'</span>)
+script(src=<span class="string">'js/excanvas.js'</span>)
+script(src=<span class="string">'js/jquery.flot.js'</span>)
+script(src=<span class="string">'js/jquery.flot.pie.min.js'</span>)
+script(src=<span class="string">'js/jquery.flot.stack.js'</span>)
+script(src=<span class="string">'js/jquery.flot.resize.min.js'</span>)
+script(defer=<span class="string">'defer'</span>, src=<span class="string">'js/modernizr.js'</span>)
+script(defer=<span class="string">'defer'</span>, src=<span class="string">'js/retina.js'</span>)
+script(defer=<span class="string">'defer'</span>, src=<span class="string">'js/custom.js'</span>)
+script(src=<span class="string">'//www.parsecdn.com/js/parse-1.2.0.min.js'</span>)
+script(src=<span class="string">'/js/underscore-min.js'</span>)
+script(src=<span class="string">'/js/handlebars.js'</span>)
+script(src=<span class="string">'/js/fashion.js'</span>)
+script.entry-template(type=<span class="string">'text/x-handlebars-template'</span>)
+  .span3.item
+    .picture
+      a.image(href=<span class="string">'{{url}}'</span>, title=<span class="string">'{{image_title}}'</span>)
+        img(src=<span class="string">'{{extra_large_new_url}}'</span>, alt=<span class="string">''</span>)
+        .description
+          p(data-articleid=<span class="string">'{{article_id}}'</span>)
+            {{meta_title}}
+        .meta
+          span
+            i.fa-icon-calendar
+            | {{creation_date}}
+          span
+            i.fa-icon-user
+            a(href=<span class="string">'#'</span>) {{author_last_name}}
+          span
+            i.fa-icon-heart-empty
+            | <span class="number">88</span>
+
+script.video-template(type=<span class="string">'text/x-handlebars-template'</span>)
+  .span3.item
+    .picture
+      a.image(href=<span class="string">'{{url}}'</span>, title=<span class="string">'{{image_title}}'</span>)
+        img(src=<span class="string">'{{extra_large_new_url}}'</span>, alt=<span class="string">''</span>)
+        .description
+          video(height=<span class="string">"100"</span>, width=<span class="string">"200"</span>, src=<span class="string">""</span>, poster=<span class="string">'{{thumb_src}}'</span>, data-url_info=<span class="string">'{{url_info}}'</span>)
+            {{meta_title}}
+        .meta
+          span
+            i.fa-icon-calendar
+            | {{creation_date}}
+          span
+            i.fa-icon-user
+            a(href=<span class="string">'#'</span>) {{author_last_name}}
+          span
+            i.fa-icon-heart-empty
+            | <span class="number">88</span></code></pre>

@@ -1,5 +1,6 @@
 
 
 # Hearst Fashion Hack
-## built with express
+
+making it easy to browse and inspire
 
