@@ -48,21 +48,23 @@ html(lang='en')
             a.brand(href='index.html') fashion
             .nav-collapse.collapse
               ul.nav
-                li.active
-                  a(href='index.html') lifestyle
-                li
-                  a(href='/') scene
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | trends
-                    b.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='/') splurge vs. steal
-                li
-                  a(href='/') fashion week
-                li
-                  a(href='/') spotlight
+                li.video-nav.active
+                  a(href='#video') video
+                li.story-nav
+                  a(href='#story') story
+                li.login-nav
+                  a(href='#login') login
+                //-li.dropdown
+                  //-a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    //-| trends
+                    //-b.caret
+                  //-ul.dropdown-menu
+                    //-li
+                      //-a(href='/') splurge vs. steal
+                //-li
+                  //-a(href='/') fashion week
+                //-li
+                  //-a(href='/') spotlight
         // end: Navigation
       // end: Container
     // end: Header
