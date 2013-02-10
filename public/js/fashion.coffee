@@ -16,7 +16,7 @@ Fashion.story = ->
       $(e).each ->
           #console.log @items
           $(@items).each ->
-              console.log @
+              #console.log @
               source = $('.entry-template').html()
               template = Handlebars.compile source
               data =
@@ -159,7 +159,7 @@ Fashion.story2 = (num) ->
 
 $('.video video').on 'click', ->
     thisUrl = $(@).attr('data-url_info')
-    console.log thisUrl
+    #console.log thisUrl
 
     $('#overlay,#my_video_1').show()
     $('#my_video_1 source').attr('src', thisUrl)
@@ -169,12 +169,29 @@ infiniteScroll = ->
     window.startNum = 1
     loadMore = ->
         $('<img src=/images/loader.gif class=loader >').insertBefore('#footer')
-        console.log 'loading'
+        #console.log 'loading'
         window.startNum = window.startNum + 50
-        console.log startNum
+        #console.log startNum
         Fashion.story(startNum)
 
-    loadMore() if $(document).height() - $(window).scrollTop() < 1200
+        loadGilt = ->
+          url = '/js/women.active.json'
+          req = $.ajax
+            url:url
+
+          req.done (e) ->
+            $(e.sales).each ->
+              $(@image_urls).each ->
+                #console.log @['612x526']
+                $(@['612x526']).each ->
+                  #console.log @url
+                  img = $('<img width=20% src=' + @url + '>')
+                  $('#wall').append(img)
+        loadGilt()
+
+
+
+    loadMore() if $(document).height() - $(window).scrollTop() < 1100
 
 
 $(window).scroll ->
