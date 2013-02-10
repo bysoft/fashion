@@ -20,7 +20,7 @@ app.configure "development", ->
   app.use express.errorHandler()
 
 app.get "/merov", routes.sub
-app.get "/", routes.hearst
+app.get "/hearst", routes.hearst
 
 
 app.get "/v1/hearst-article-search", routes.hearstArticleSearch

@@ -2,5 +2,9 @@
 
 # Hearst Fashion Hack
 
-making it easy to browse and inspire
+This app will search Hearst for articles with photos, and show you the
+description, author, and date of post.
 
+Features include infinite scroll.
+
+Video playing for mobile devices.
