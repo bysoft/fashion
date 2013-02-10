@@ -168,6 +168,7 @@ $('.video video').on 'click', ->
 infiniteScroll = ->
     window.startNum = 1
     loadMore = ->
+        $('<img src=/images/loader.gif class=loader >').insertBefore('#footer')
         console.log 'loading'
         window.startNum = window.startNum + 50
         console.log startNum
@@ -182,6 +183,9 @@ $(window).scroll ->
 $('body').on 'click','.picture a', (e) ->
     e.preventDefault()
 
+
+$('body').on 'click', '.nav a', ->
+  $('#overlay,#my_video_1').hide()
 
 
 
