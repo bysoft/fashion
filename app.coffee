@@ -21,7 +21,7 @@ app.configure "development", ->
 
 app.get "/", routes.index
 app.get "/merov", routes.sub
-app.get "/hearst", routes.hearst
+app.get "/", routes.hearst
 
 
 app.get "/v1/hearst-article-search", routes.hearstArticleSearch
