@@ -75,6 +75,7 @@ Fashion.video = ->
             $('#overlay,#my_video_1').show()
             myPlayer = _V_("my_video_1")
             myPlayer.src(videoUrl)
+            myPlayer.pause()
             myPlayer.play()
 
 
