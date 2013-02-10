@@ -405,3 +405,25 @@ html(lang='en')
     script(defer='defer', src='js/retina.js')
     script(defer='defer', src='js/custom.js')
     script(src='//www.parsecdn.com/js/parse-1.2.0.min.js')
+    script(src='/js/underscore-min.js')
+    script(src='/js/handlebars.js')
+    script(src='/js/fashion.js')
+    script#entry-template(type='text/x-handlebars-template')
+      .span3.item
+        .picture
+          a.image(href='{{url}}', title='{{image_title}}')
+            img(src='{{extra_large_new_url}}', alt='')
+            .description
+              p(data-articleid='{{article_id}}')
+                {{meta_title}}
+            .meta
+              span
+                i.fa-icon-calendar
+                | {{creation_date}}
+              span
+                i.fa-icon-user
+                a(href='#') {{author_last_name}}
+              span
+                i.fa-icon-heart-empty
+                | 88
+
