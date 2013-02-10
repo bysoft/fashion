@@ -22,7 +22,20 @@ app.configure "development", ->
 app.get "/", routes.index
 app.get "/merov", routes.sub
 app.get "/hearst", routes.hearst
-app.get "/hearstjson", routes.hearstjson
+
+
+app.get "/v1/hearst-article-search", routes.hearstArticleSearch
+app.get "/v1/hearst-ad-category", routes.hearstAdCategory
+app.get "/v1/hearst-article-category-search", routes.hearstArticleCategorySearch
+app.get "/v1/hearst-article-image-search", routes.hearstImageSearch
+#app.get "/v1/hearst-article-section-search", routes.hearstArticleSectionSearch
+#app.get "/v1/hearst-article-type-search", routes.hearstArticleTypeSearch
+#app.get "/v1/hearst-author-search", routes.hearstAuthorSearch
+#app.get "/v1/hearst-source-search", routes.hearstSourceSearch
+#app.get "/v1/hearst-template-search", routes.hearstTemplateSearch
+
+
+app.get "/v1/gilt-category", routes.giltcategory
 app.get "/ui", routes.ui
 app.get "/users", user.list
 app.get "/cyborg", user.store
