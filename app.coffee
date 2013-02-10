@@ -19,7 +19,6 @@ app.configure ->
 app.configure "development", ->
   app.use express.errorHandler()
 
-app.get "/", routes.index
 app.get "/merov", routes.sub
 app.get "/", routes.hearst
 
