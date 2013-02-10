@@ -69,7 +69,17 @@
             jsonp: '_callback',
             cache: true
           });
-          return req3.done(function(e) {});
+          return req3.done(function(e) {
+            return $('video').on('click', function() {
+              var myPlayer, videoUrl;
+              videoUrl = $(this).attr('data-url_info');
+              $('#my_video_1').find('source').attr('src', videoUrl);
+              $('#overlay,#my_video_1').show();
+              myPlayer = _V_("my_video_1");
+              myPlayer.src(videoUrl);
+              return myPlayer.play();
+            });
+          });
         });
       });
     });

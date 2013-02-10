@@ -68,6 +68,19 @@ Fashion.video = ->
           jsonp:'_callback'
           cache:true
         req3.done (e) ->
+          $('video').on 'click', ->
+            videoUrl = $(@).attr('data-url_info')
+            $('#my_video_1').find('source').attr('src',videoUrl)
+
+            $('#overlay,#my_video_1').show()
+            myPlayer = _V_("my_video_1")
+            myPlayer.src(videoUrl)
+            myPlayer.play()
+
+
+
+
+
           #console.log e
 
 
