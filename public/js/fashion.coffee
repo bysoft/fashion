@@ -16,7 +16,7 @@ Fashion.story = ->
       $(e).each ->
           #console.log @items
           $(@items).each ->
-              #console.log @
+              console.log @
               source = $('.entry-template').html()
               template = Handlebars.compile source
               data =

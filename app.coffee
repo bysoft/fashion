@@ -16,7 +16,7 @@ ensureAuthenticated = (req, res, next) ->
 SinglyStrategy = require("passport-singly").Strategy
 SINGLY_APP_ID = "4e29395f3c7d8e613bed77ba91d981de"
 SINGLY_APP_SECRET = "afe699372d771865af7542bf543e288b"
-CALLBACK_URL = process.env.CALLBACK_URL or "http://localhost:3000/auth/singly/callback"
+CALLBACK_URL = "http://fashion.jit.su/auth/singly/callback/"
 passport.serializeUser (user, done) ->
   done null, user
 
@@ -35,7 +35,9 @@ passport.use new SinglyStrategy(
 , (accessToken, refreshToken, profile, done) ->
 
   # asynchronous verification, for effect...
+
   process.nextTick ->
+    console.log 'in nextTick'
 
     # To keep the example simple, the user's Singly profile is returned to
     # represent the logged-in user.  In a typical application, you would want
@@ -69,6 +71,7 @@ app.configure "development", ->
   app.use express.errorHandler()
 
 app.get "/merov", routes.sub
+app.get "/", routes.hearst
 app.get "/hearst", routes.hearst
 
 

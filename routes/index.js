@@ -17,10 +17,7 @@ request = require('request');
   };
 
   exports.hearst = function(req, res) {
-    return res.render("board", {
-      title: "merov"
-    , session: req.session
-    });
+    res.render('board.ejs', { user: req.user })
   };
 
   exports.hearstArticleSearch = function(req, res, next) {

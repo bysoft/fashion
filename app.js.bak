@@ -1,11 +1,11 @@
 var express = require('express');
 var partials = require('express-partials');
 var passport = require('passport');
-var routes = require("./routes")
+  var routes = require("./routes")
 
-, user = require("./routes/user")
+  , user = require("./routes/user")
 
-, http = require("http")
+  , http = require("http")
 
 , path = require("path")
 
@@ -14,7 +14,7 @@ var SinglyStrategy = require('passport-singly').Strategy;
 var SINGLY_APP_ID = process.env.SINGLY_APP_ID || "4e29395f3c7d8e613bed77ba91d981de";
 var SINGLY_APP_SECRET = process.env.SINGLY_APP_SECRET || "afe699372d771865af7542bf543e288b";
 
-var CALLBACK_URL = process.env.CALLBACK_URL || "http://fashion.jit.su/auth/singly/callback";
+var CALLBACK_URL = process.env.CALLBACK_URL || "http://localhost:3000/auth/singly/callback";
 
 // Passport session setup.//{{{
 //   To support persistent login sessions, Passport needs to be able to
@@ -92,6 +92,7 @@ app.configure(function () {
 //});
 
 app.get("/", routes.hearst);
+//app.get "/v1/gilt-category", routes.giltcategory
 
 app.get('/account', ensureAuthenticated, function (req, res) {
   res.render('account', { user: req.user });
@@ -124,3 +125,4 @@ app.get('/logout', function (req, res) {
 });
 
 app.listen(3000);
+

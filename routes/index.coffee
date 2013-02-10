@@ -3,8 +3,7 @@
 # * GET home page.
 #
 exports.index = (req, res) ->
-  res.render "cyborg",
-    title: "hearst"
+  res.render('index', { user: req.user })
 
 exports.sub = (req, res) ->
   res.render "merov",
