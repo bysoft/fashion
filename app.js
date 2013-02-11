@@ -92,6 +92,7 @@ app.configure(function () {
 //});
 
 app.get("/", routes.hearst);
+app.get("/hearst", routes.hearst);
 
 app.get('/account', ensureAuthenticated, function (req, res) {
   res.render('account', { user: req.user });
