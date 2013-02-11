@@ -77,6 +77,7 @@
               $('#overlay,#my_video_1').show();
               myPlayer = _V_("my_video_1");
               myPlayer.src(videoUrl);
+              myPlayer.pause();
               return myPlayer.play();
             });
           });
@@ -175,7 +176,7 @@
   $('.video video').on('click', function() {
     var thisUrl;
     thisUrl = $(this).attr('data-url_info');
-    $('#overlay,#my_video_1').show();
+    $('#overlay,#my_video_1').hide();
     $('#my_video_1 source').attr('src', thisUrl);
     return _V_('my_video_1').load();
   });
