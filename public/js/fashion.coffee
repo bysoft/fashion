@@ -175,7 +175,7 @@ $('.video video').on 'click', ->
     thisUrl = $(@).attr('data-url_info')
     #console.log thisUrl
 
-    $('#overlay,#my_video_1').hide()
+    $('#overlay,#my_video_1').show()
     $('#my_video_1 source').attr('src', thisUrl)
     _V_('my_video_1').load()
 
