@@ -129,7 +129,7 @@ $('.story-nav a').on 'click', ->
 
 
 val = ($(window).width() - 600) / 2
-$('#my_video_1').css('left',val)
+$('#my_video_1').css('left',val).hide()
 $(window).resize ->
   val = ($(window).width() - 600) / 2
   $('#my_video_1').css('left',val)

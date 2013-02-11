@@ -128,7 +128,7 @@
 
   val = ($(window).width() - 600) / 2;
 
-  $('#my_video_1').css('left', val);
+  $('#my_video_1').css('left', val).hide();
 
   $(window).resize(function() {
     val = ($(window).width() - 600) / 2;
@@ -176,7 +176,7 @@
   $('.video video').on('click', function() {
     var thisUrl;
     thisUrl = $(this).attr('data-url_info');
-    $('#overlay,#my_video_1').hide();
+    $('#overlay,#my_video_1').show();
     $('#my_video_1 source').attr('src', thisUrl);
     return _V_('my_video_1').load();
   });
