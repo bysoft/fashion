@@ -190,62 +190,6 @@ jQuery(document).ready(function($){
 			   [ { data: followers, label: "Followers"} ], {
 				   series: {
 					   lines: { show: true,
-Fashion.story = (num) ->
-
-  url = 'http://hearst.api.mashery.com/Article/search?_pretty=0&shape=full&start=' + num + '&limit=100&sort=publish_date%2Cdesc&total=0&api_key=v6xqmhe5q4pqtwkr6bem549x'
-#url = '/v1/hearst-article-search/'
-  req = $.ajax
-      url: url
-      dataType:'jsonp'
-      jsonp:'_callback'
-      cache:true
-
-  req.done (e) ->
-      #console.log e
-      $(e).each ->
-          #console.log @items
-          $(@items).each ->
-              #console.log @
-              source = $('.entry-template').html()
-              template = Handlebars.compile source
-              data =
-                  meta_title:@meta_title
-                  creation_date:@creation_date
-                  headline_image_title:@headline_image_title
-                  article_id:@id
-                  author_last_name:@author_last_name
-                  extra_large_new_url:@IMAGE_1_extra_large_new_url
-              snip = template data
-
-              $(@).each ->
-                 $('#wall').append snip if @IMAGE_1_extra_large_new_url != undefined
-                #$('#wrap').append('foo') if @IMAGE_1_extra_large_new_url != undefined
-
-
-$('.video video').on 'click', ->
-    thisUrl = $(@).attr('data-url_info')
-    console.log thisUrl
-    
-    $('#overlay,#my_video_1').show()
-    $('#my_video_1 source').attr('src', thisUrl)
-    _V_('my_video_1').load()
-    
-infiniteScroll = ->
-    window.startNum = 1
-    loadMore = ->
-        console.log 'loading'
-        window.startNum = window.startNum + 50
-        console.log startNum
-        Fashion.story(startNum)
-        
-    loadMore() if $(document).height() - $(window).scrollTop() < 1200
-    
-
-$(window).scroll ->
-    infiniteScroll()
-
-$('body').on 'click','.picture a', (e) ->
-    e.preventDefault()
 
 
 
